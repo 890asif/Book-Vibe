@@ -26,7 +26,8 @@ const Navbar = () => {
       </ul>
     </div>
     <div className='flex  items-center'>
-        <Image src={Logo}></Image>
+        <Image src={Logo}
+        alt='photo'></Image>
         <a className="btn btn-ghost text-lg font-bold">Book Vibe</a>
     </div>
   </div>

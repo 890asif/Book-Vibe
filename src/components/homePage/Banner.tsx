@@ -33,7 +33,7 @@ const Banner = () => {
                         src={Hero}
                         alt="Books"
                         priority
-                        className="w-64 sm:w-80 lg:w-[420px] xl:w-[480px] h-auto object-contain"
+                        className="w-64 sm:w-80 lg:w-105 xl:w-120 h-auto object-contain"
                     />
                 </div>
 

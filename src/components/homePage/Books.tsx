@@ -1,6 +1,5 @@
 import React from 'react';
 import BookCard from '../shared/BookCard';
-import { FaStar, FaBookOpen } from "react-icons/fa";
 import { IBook } from '@/type/booksType';
 
 const getBooks = async ()=>{

@@ -1,5 +1,6 @@
 import { IBook } from "@/type/booksType";
 import Image from "next/image";
+import Link from "next/link";
 import { FaBookOpen, FaStar } from "react-icons/fa";
 
 
@@ -84,10 +85,10 @@ const BookCard = ({ book }:IBookCardProps) => {
                         </p>
                     </div>
 
-                    <button className="btn btn-success btn-sm gap-2">
+                    <Link href={`/books/${book.bookId}`}><button className="btn btn-success btn-sm gap-2">
                         <FaBookOpen />
-                        Details
-                    </button>
+                        View Details
+                    </button></Link>
 
                 </div>
 

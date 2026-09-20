@@ -20,7 +20,7 @@ const Books = async() => {
         </div>
             <div className=' px-10 grid grid-cols-3 gap-6'>
                 {
-            booksData.map((book:IBook) =>{
+            booksData.slice(0, 6).map((book:IBook) =>{
                 return <BookCard key={book.bookId} book={book}></BookCard>
                 
             })

@@ -1,3 +1,5 @@
+import ReadButton from '@/components/bookDetails/ReadButton';
+import WishlistButton from '@/components/bookDetails/WishlistButton';
 import { IBook } from '@/type/booksType';
 import Image from 'next/image';
 import React from 'react';
@@ -38,7 +40,7 @@ const BookDetailPage = async ({ params }: IBookDetailsPage) => {
                     alt={book.bookName}
                     width={300}
                     height={400}
-                    className="w-full max-w-[260px] h-[350px] object-contain rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                    className="w-full max-w-65 h-87.5 object-contain rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                 />
             </figure>
 
@@ -124,13 +126,9 @@ const BookDetailPage = async ({ params }: IBookDetailsPage) => {
 
                 {/* Button */}
                 <div className="card-actions justify-end mt-4">
-                    <button className="btn bg-white hover:bg-[#00b87a] text-gray-800 border botder-gray-700 hover:text-white px-8">
-                        Read
-                    </button>
+                <ReadButton book={book}></ReadButton>
 
-                    <button className="btn bg-[#00D390] hover:bg-green-500 text-white border-none px-6">
-                        Wishlist
-                    </button>
+                <WishlistButton book={book}></WishlistButton>
                 </div>
 
             </div>

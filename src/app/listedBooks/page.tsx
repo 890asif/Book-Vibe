@@ -18,7 +18,7 @@ const ListedBookspage = () => {
       <div className="tabs tabs-border mt-15">
         <input type="radio" name="my_tabs_2" className="tab" aria-label={`Read Books (${readBooks.length})`} />
 
-        <div className="tab-content border-base-300 bg-base-100 p-10 ">
+        <div className="tab-content border-base-300 bg-base-100 p-10 space-y-4">
           {
             readBooks.length > 0 ? (
               readBooks.map((book: IBook) => {
@@ -30,7 +30,7 @@ const ListedBookspage = () => {
 
         <input type="radio" name="my_tabs_2" className="tab" aria-label={`Wishlist Books (${wishlist.length})`} defaultChecked />
 
-        <div className="tab-content border-base-300 bg-base-100 p-10">
+        <div className="tab-content border-base-300 bg-base-100 p-10 space-y-4">
           {
             wishlist.length > 0 ? (
               wishlist.map((book: IBook) => {

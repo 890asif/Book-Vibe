@@ -6,12 +6,12 @@ import { IBook } from "@/type/booksType";
 import ListedBooksCard from "@/components/shared/ListedBooksCard";
 
 const ListedBookspage = () => {
-  const { readBooks, wishlist } = useContext(BookContext);
+  const { readBooks, wishlist } = useContext(BookContext)!;
   console.log(readBooks, wishlist);
 
   return (
-    <div className="px-30 my-6">
-      <h2 className="my-7 bg-green-200 rounded-2xl font-bold text-4xl py-8 px-90 text-center">Listed Books</h2>
+    <div className="px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 my-6">
+      <h2 className="my-5 sm:my-6 md:my-7 bg-green-200 rounded-2xl font-bold text-2xl sm:text-3xl md:text-4xl py-5 sm:py-6 md:py-8 px-4 sm:px-8 md:px-16 lg:px-24 xl:px-32 text-center">Listed Books</h2>
 
 
 

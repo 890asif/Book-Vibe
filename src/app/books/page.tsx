@@ -8,7 +8,7 @@ const getBooks = async ()=>{
     return data;
 }
 
-const Books = async() => {
+const Books = async() => {  
     const booksData = await getBooks();
     console.log(booksData)
     return (
@@ -18,7 +18,7 @@ const Books = async() => {
             <h2 className='text-3xl font-bold text-gray-800'>Explore All Books</h2>
             <p className='text-gray-500'>Discover amazing stories, timeless classics, and inspiring books from talented authors.</p>
         </div>
-            <div className=' px-10 grid grid-cols-3 gap-6'>
+            <div className=' px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
                 {
             booksData.map((book:IBook) =>{
                 return <BookCard key={book.bookId} book={book}></BookCard>

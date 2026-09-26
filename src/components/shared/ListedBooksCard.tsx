@@ -12,7 +12,7 @@ const listedBooksCard = ({book}: IListedBooksCardProps) => {
     return (
         <div key={book.bookId} className="group flex w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
 
-                  {/* Image - Left */}
+            
                   <div className="flex w-32 shrink-0 items-center justify-center rounded-xl bg-gray-100 p-3 sm:w-36">
                     <Image
                       src={book.image}

@@ -7,7 +7,7 @@ const Banner = () => {
         <section className="px-4 sm:px-6 lg:px-10 py-8 sm:py-12 lg:py-16">
             <div className="max-w-7xl mx-auto bg-[#F3F3F3] rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center px-6 sm:px-10 lg:px-16 py-10 lg:py-14 overflow-hidden">
 
-                {/* Content */}
+
                 <div className="text-center lg:text-left">
                     <p className="text-green-600 font-semibold mb-3">
                         Welcome to Book Vibe
@@ -27,7 +27,7 @@ const Banner = () => {
                     </button>
                 </div>
 
-                {/* Image */}
+              
                 <div className="flex justify-center lg:justify-end">
                     <Image
                         src={Hero}
